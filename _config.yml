@@ -1,0 +1,21 @@
+safe: true
+lsi: false
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+
+show_drafts: true
+markdown: "GFM"
+
+livereload: true
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"
+
+sass:
+  sass_dir: "_sass"

@@ -1,0 +1,48 @@
+---
+---
+
+body {
+    background-color: white;
+    color: #444;
+    margin: 1em;
+    text-align: center;
+}
+
+.logo {
+    border-bottom: 10px double crimson;
+    width: max-content;
+    margin: auto;
+}
+
+.text {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    font-family: serif;
+    text-shadow: 0.1em 0.1em rgba(red, 0.5), -0.1em -0.1em rgba(blue, 0.5);
+    animation-name: woo;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes woo {
+    from {
+	text-shadow: 0.1em 0.1em rgba(red, 0.5), -0.1em -0.1em rgba(blue, 0.5);
+    }
+
+    25% {
+	text-shadow: 0.1em -0.1em rgba(red, 0.5), -0.1em 0.1em rgba(blue, 0.5);
+    }
+
+    50% {
+	text-shadow: -0.1em -0.1em rgba(red, 0.5), 0.1em 0.1em rgba(blue, 0.5);
+    }
+
+    75% {
+	text-shadow: -0.1em 0.1em rgba(red, 0.5), 0.1em -0.1em rgba(blue, 0.5);
+    }
+
+    to {
+	text-shadow: 0.1em 0.1em rgba(red, 0.5), -0.1em -0.1em rgba(blue, 0.5);
+    }
+}
